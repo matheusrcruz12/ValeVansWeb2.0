@@ -15,8 +15,6 @@ public class RepositorioRotaImpl implements RepositorioRota{
 	EntityManagerFactory emf = Persistence.createEntityManagerFactory("Persistencia_simples");
 	EntityManager em = emf.createEntityManager();
 	
-	
-	
 	@Override
 	public Rota insert(Rota rota) {
 		em.getTransaction().begin();
