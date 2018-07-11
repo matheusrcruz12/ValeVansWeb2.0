@@ -19,6 +19,7 @@ public class RepositorioRotaImpl implements RepositorioRota{
 	public Rota insert(Rota rota) {
 		em.getTransaction().begin();
 		
+		
 		em.persist(rota);
 		
 		em.getTransaction().commit();
